@@ -141,7 +141,7 @@ public class Robot extends IterativeRobot {
 //        	} catch (NIVisionException e){
 //        		e.printStackTrace();
 //        	}
-        	//NIVision.imaqDrawShapeOnImage(frame.image, frame.image, rect,DrawMode.DRAW_VALUE , ShapeMode.SHAPE_RECT, 0f);
+        	//NIVision.imaqDrawShapeOnImage(frame.image, frame.image, rect,DrawMode.DRAW_VALUE , ShapeMode.SHAPE_RECT, 125f);
         	//CameraServer.getInstance().setImage(thresholdimage.image);
         	CameraServer.getInstance().setImage(frame.image);
         	count = 0;
