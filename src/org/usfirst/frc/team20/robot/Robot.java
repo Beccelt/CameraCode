@@ -56,6 +56,11 @@ public class Robot extends IterativeRobot {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+	//NIVision.Range TARGET_HUE_RANGE = new NIVision.Range(62, 151); Default hue range for goal target
+        //NIVision.Range TARGET_SAT_RANGE = new NIVision.Range(188, 255); Default saturation range for goal target
+        //NIvision.Range TARGET_VAL_RANGE = new NIVision.Range(0, 255); Default value range for goal target
+		
         //frame = NIVision.imaqCreateImage(NIVision.ImageType.IMAGE_RGB, 0);
         session = NIVision.IMAQdxOpenCamera("cam1", NIVision.IMAQdxCameraControlMode.CameraControlModeController);
         NIVision.IMAQdxConfigureGrab(session);
