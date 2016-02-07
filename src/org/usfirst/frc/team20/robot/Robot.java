@@ -104,6 +104,9 @@ public class Robot extends IterativeRobot {
         currentTime = Timer.getMatchTime();
         if(count > 3 ){
         	NIVision.IMAQdxGrab(session, frame.image, 1);
+        	
+        	//NIVision.imaqColorThreshold(frame.image, frame.image, 255, NIVision.ColorMode.HSV, TARGET_HUE_RANGE, 
+        	//TARGET_SAT_RANGE, TARGET_VAL_RANGE);
         	try {
 				thresholdimage = frame.thresholdHSV(78, 100, 149, 255, 142, 255);
 				//bigObjectsImage = thresholdimage.removeSmallObjects(false, 2);
